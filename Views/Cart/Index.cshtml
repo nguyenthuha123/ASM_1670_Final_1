@@ -1,0 +1,71 @@
+﻿@model _1670_Final.Models.Book;
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    .list-product {
+        width: 1200px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .product {
+        margin-top: 10px;
+        margin-right: 10px;
+        width: 120px;
+        height: 200px;
+    }
+
+    img {
+        width: 100px;
+        height: 100px;
+        display: block;
+        margin: auto;
+    }
+
+    .title {
+        display: block;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .viewProduct, .addProduct {
+        width: calc((100% - 2px) / 2);
+        display: inline-block;
+        float: left;
+        padding: 2px;
+        font-size: 12px;
+        box-sizing: border-box;
+        color: #fff;
+        background: #808080;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .addProduct {
+        margin-left: 2px;
+    }
+</style>
+
+<div class="list-product">
+    
+    @foreach (var item in ViewBag.book)
+    {
+    <div class="product">
+      @*  <img src="@item.Book_image " class="img-responsive" />*@
+          <img class="img-responsive" src="@item.Book_image" height="160" width="120">
+          <span class="name">@item.NameBook</span>
+ @*         <a href="" class="viewProduct">View</a>*@
+@*
+          <button type="button"><a asp-controller="Cart" asp-action="getDetailBook" asp-route-id="@item.Id" class="btn btn-warning> View</a></button>*@
+         <a asp-controller="Books" asp-action="Details" asp-route-id="@item.Id"><img class="card-img-top" src="@item.Book_image" alt="..."/>Details</a>
+          <div class="text-center"><a asp-controller="Cart" asp-action="addCart" asp-route-id="@item.Id" class="btn btn-outline-dark mt-auto">Add to cart</a></div>
+       
+    </div>
+    }
+</div>
