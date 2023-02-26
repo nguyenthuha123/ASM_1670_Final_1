@@ -10599,11 +10599,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Downloads\\ASM_1670-main (2)\\ASM_1670-main\\1670_Final.csproj",
+      "projectUniqueName": "D:\\ASM_1670_Final_1\\1670_Final.csproj",
       "projectName": "1670_Final",
-      "projectPath": "C:\\Users\\Admin\\Downloads\\ASM_1670-main (2)\\ASM_1670-main\\1670_Final.csproj",
+      "projectPath": "D:\\ASM_1670_Final_1\\1670_Final.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Downloads\\ASM_1670-main (2)\\ASM_1670-main\\obj\\",
+      "outputPath": "D:\\ASM_1670_Final_1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
